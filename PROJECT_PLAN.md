@@ -109,7 +109,7 @@ Use Plotly charts only where they answer a business question. Keep filters limit
 
 ## 15. Testing plan
 
-Phase 2 reconciled row counts and exclusions; independently verified KPI formulas, RFM values, cluster profiles/stability, and risk rules. Dashboard pages, filters, charts, application startup, README commands, and report values remain to be checked in their later phases.
+At the Phase 2 checkpoint, row counts and exclusions were reconciled and KPI formulas, RFM values, cluster profiles/stability, and risk rules were independently verified. Dashboard pages, filters, charts, application startup, README commands, and report values were subsequently reviewed in the later phases.
 
 ## 16. Documentation plan
 
@@ -201,4 +201,9 @@ No supervised churn label is available or claimed.
 
 The analysis script verifies row-category reconciliation; invoice, daily, and customer revenue totals; sales units; identified/unidentified revenue coverage; orders, customers, AOV, repeat rate, and return-rate formulas; independent RFM monetary/frequency/last-purchase values; cluster profiles and seed stability; risk score formula; and NaN/inf checks for RFM and risk inputs. These checks passed. The source workbook SHA-256 is recorded in `data/processed/validation_report.json` to detect accidental changes.
 
-Phase 2 files created: `analysis.py`, `requirements.txt`, `.gitignore`, and `data/processed/` aggregates. The dashboard, README, and final project report have not been built; those remain later approved phases.
+Phase 2 files created: `analysis.py`, `requirements.txt`, `.gitignore`, and `data/processed/` aggregates. At the Phase 2 checkpoint, dashboard and submission documentation remained for later phases.
+
+
+## Phase 4 - Documentation and report
+
+Phase 4 created `PROJECT_REPORT.docx` and finalized `README.md` from the implemented application, validated Phase 2 outputs, and existing dashboard screenshots. `generate_report.py` recreates the report from those outputs and screenshots; `python-docx` is pinned for this purpose. The validated analytical logic and processed outputs were not changed. The report and README state the implemented methodology, historical results, assumptions, and limitations; the four dashboard screenshots were verified as existing files.
