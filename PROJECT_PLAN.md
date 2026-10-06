@@ -2,7 +2,7 @@
 
 **Project:** Retail Revenue & Customer Intelligence System  
 **Context:** AICTE | IBM SkillsBuild Data Analytics with AI Internship 2026  
-**Status:** Phase 1 planning and Phase 2 analytical engine are complete. Dashboard and final report work have not started.
+**Status:** Phase 1 and Phase 2 are complete. The Phase 3 local dashboard is implemented and ready for visual review; README finalization and the project report have not started.
 
 ## 1. Business problem
 
@@ -105,7 +105,7 @@ Use Plotly charts only where they answer a business question. Keep filters limit
 - scikit-learn for the evaluated RFM clustering (Phase 2 confirmed K-Means).
 - PyArrow for compact Parquet analytical outputs.
 - A compact processed-data/aggregate cache may be generated locally to avoid repeatedly reading Excel. Generated data and the original workbook should not be committed.
-- Project-local virtual environment: `.venv`; pandas 3.0.6, openpyxl 3.1.5, scikit-learn 1.9.1, and PyArrow 25.0.1 installed and imports verified. Pinned analytical dependencies are listed in `requirements.txt`.
+- Project-local virtual environment: `.venv`. Phase 2 outputs were generated and validated with pandas 3.0.6 (recorded in `validation_report.json`). For the Streamlit 1.54 runtime, the shared environment now uses pandas 2.3.3 because Streamlit requires pandas below 3; openpyxl 3.1.5, scikit-learn 1.9.1, PyArrow 25.0.1, and Plotly 6.5.2 are pinned alongside Streamlit in `requirements.txt`.
 
 ## 15. Testing plan
 
