@@ -1,0 +1,19 @@
+{
+  "c_prefix_negative_quantity_price_positive_lines_after_dedup": 17910,
+  "c_prefix_negative_quantity_signed_value_after_dedup": -716394.37,
+  "c_prefix_negative_quantity_signed_units_after_dedup": -467731,
+  "service_charge_revenue_after_dedup": 452006.55,
+  "service_cancellation_value_after_dedup": -15620.22,
+  "service_cancellation_lines_after_dedup": 243,
+  "non_sales_adjustment_value_before_dedup": -546435.539,
+  "gift_voucher_value_before_dedup": 1686.6100000000001,
+  "negative_quantity_without_c_prefix_lines_before_dedup": 3457,
+  "negative_quantity_zero_price_lines_before_dedup": 3457,
+  "c_prefix_nonnegative_quantity_rows_before_dedup": 1,
+  "zero_price_positive_quantity_lines_before_dedup": 2745,
+  "zero_price_positive_quantity_units_separate_before_dedup": 252259,
+  "negative_price_rows_before_dedup": 5,
+  "negative_price_bad_debt_adjustment_value_before_dedup": -158676.13999999998,
+  "c_prefix_nonnegative_quantity_signed_value_before_dedup": 373.57,
+  "interpretation": "Only C-prefixed, negative-quantity, positive-price rows are included in signed monetary returns. Negative quantities without C prefixes (all observed at zero price) remain a separate unpriced adjustment/return signal. C-prefixed nonnegative-quantity and negative-price rows are anomalies, not ordinary sales or defined monetary returns. Positive-quantity zero-price lines are excluded from paid-sale units and revenue and reported separately. Negative-price rows are bad-debt adjustments in this workbook and are excluded from sales and returns."
+}
