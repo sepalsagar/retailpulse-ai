@@ -60,7 +60,7 @@ UCI Online Retail II workbook
   → management review and action
 ```
 
-Run `analysis.py` after placing the workbook to generate local `data/processed/` outputs. The dashboard reads these outputs and does not repeatedly open Excel.
+The repository includes the compact Parquet/JSON files in `data/processed/`. The dashboard reads these committed outputs directly, so you can run it without downloading or reprocessing the original workbook. After downloading the official UCI workbook, you can run `analysis.py` to regenerate or update the processed outputs; the script reads one sheet at a time and does not modify the workbook.
 
 ## KPI definitions
 
@@ -117,7 +117,7 @@ retailpulse-ai/
 │   └── 04_risks_opportunities.png
 └── data/
     ├── online_retail_II.xlsx  # downloaded separately; ignored by Git
-    └── processed/             # generated locally; ignored by Git
+    └── processed/             # compact analytical outputs committed to the repository
 ```
 
 ## Installation and virtual environment
@@ -133,14 +133,19 @@ python -m pip install -r requirements.txt
 
 ## Generate outputs and run the dashboard
 
-After downloading the official UCI workbook to `data/online_retail_II.xlsx`:
+To run the dashboard using the committed processed outputs:
 
 ```powershell
-python analysis.py
 streamlit run app.py
 ```
 
-The dashboard runs locally. `.gitignore` excludes the source workbook and generated `data/processed/` files.
+The dashboard runs locally and reads the committed `data/processed/` outputs. The original raw workbook, `data/online_retail_II.xlsx`, is excluded from Git by `.gitignore`.
+
+To regenerate or update the processed outputs, download the official UCI workbook and place it at `data/online_retail_II.xlsx`, then run:
+
+```powershell
+python analysis.py
+```
 
 After the analytical outputs and screenshots are available, regenerate the Word report with:
 
